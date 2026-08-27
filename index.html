@@ -1,0 +1,1285 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <title>
+      Crochet Premium: tus manos ya saben producir algo que se vende
+    </title>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "859343220559452");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=859343220559452&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Open+Sans:wght@400;600;700;800&family=Inter:wght@800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary": "#ffffff",
+              "surface-container-highest": "#e4e1eb",
+              "on-primary-fixed": "#410007",
+              "surface-tint": "#9e3f42",
+              tertiary: "#76546a",
+              primary: "#9e3f42",
+              "on-primary-container": "#772126",
+              secondary: "#665f34",
+              "plum-text": "#4a2c40",
+              background: "#fcf8ff",
+              "surface-container-high": "#eae6f0",
+              outline: "#897271",
+              "coral-cta": "#ff8a8a",
+              "buy-cta": "#e8543f",
+              "buy-cta-border": "#a3271a",
+              "on-secondary-container": "#6c653a",
+              "surface-dim": "#dcd8e2",
+              "surface-bright": "#fcf8ff",
+              "on-secondary-fixed": "#201c00",
+              "surface-container-low": "#f6f2fc",
+              "lemon-highlight": "#fff4bd",
+              "surface-container": "#f0ecf6",
+              "outline-variant": "#dcc0bf",
+              "surface-container-lowest": "#ffffff",
+              "mint-surface": "#f0fff4",
+              "good-green": "#3d7a52",
+              "inverse-surface": "#303037",
+              "on-background": "#1b1b22",
+              "on-surface": "#1b1b22",
+              "inverse-on-surface": "#f3eff9",
+              surface: "#fcf8ff",
+              "on-surface-variant": "#554241",
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-mobile": "16px",
+              "section-gap": "64px",
+              gutter: "24px",
+              "container-max": "800px",
+              base: "8px",
+              "block-gap": "16px",
+              "container-narrow": "640px",
+              "section-v": "52px",
+            },
+            fontFamily: {
+              "headline-impact": ["Inter"],
+              "headline-xl": ["Quicksand"],
+              "label-md": ["Open Sans"],
+              "headline-lg": ["Quicksand"],
+              "headline-xl-mobile": ["Quicksand"],
+              "label-lg": ["Open Sans"],
+              "body-lg": ["Open Sans"],
+              "body-md": ["Open Sans"],
+              "headline-md": ["Quicksand"],
+              caption: ["Open Sans"],
+            },
+            fontSize: {
+              "headline-xl": ["48px", { lineHeight: "1.1", fontWeight: "700" }],
+              "label-md": ["12px", { lineHeight: "1.2", fontWeight: "700" }],
+              "headline-lg": ["32px", { lineHeight: "1.2", fontWeight: "600" }],
+              "headline-xl-mobile": [
+                "32px",
+                { lineHeight: "1.2", fontWeight: "700" },
+              ],
+              "label-lg": [
+                "14px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "0.06em",
+                  fontWeight: "800",
+                },
+              ],
+              "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+              "body-md": ["16px", { lineHeight: "1.65", fontWeight: "400" }],
+              "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "600" }],
+              caption: ["13px", { lineHeight: "1.4", fontWeight: "600" }],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @layer base {
+        body {
+          -webkit-tap-highlight-color: transparent;
+          scroll-behavior: smooth;
+        }
+        .pb-safe {
+          padding-bottom: env(safe-area-inset-bottom, 0px);
+        }
+        .pt-safe {
+          padding-top: env(safe-area-inset-top, 0px);
+        }
+      }
+      body {
+        min-height: max(884px, 100dvh);
+        position: relative;
+        background-color: #fcf8ff;
+        /* El patrón de manchas de color se arma como UN bloque de 1400px de
+           alto y se repite verticalmente (background-repeat: repeat-y) en
+           vez de estirarse una sola vez en toda la altura de la página —
+           así el color queda parejo de arriba a abajo sin importar cuán
+           larga sea la landing, en vez de dejar tramos enormes sin color. */
+        background-image:
+          radial-gradient(
+            560px circle at 8% 6%,
+            rgba(255, 138, 138, 0.62),
+            transparent 65%
+          ),
+          radial-gradient(
+            480px circle at 94% 24%,
+            rgba(255, 244, 189, 0.9),
+            transparent 65%
+          ),
+          radial-gradient(
+            520px circle at 10% 48%,
+            rgba(158, 63, 66, 0.38),
+            transparent 65%
+          ),
+          radial-gradient(
+            500px circle at 92% 70%,
+            rgba(255, 138, 138, 0.55),
+            transparent 65%
+          ),
+          radial-gradient(
+            560px circle at 30% 94%,
+            rgba(255, 244, 189, 0.85),
+            transparent 65%
+          );
+        background-repeat: repeat-y;
+        background-size: 100% 1400px;
+      }
+      /* Textura sutil de puntitos (guiño a los puntos de crochet), muy baja
+     opacidad — decorativa, nunca compite con el CTA (regla de
+     Conversion Optimization: los elementos de fondo no deben pelear por
+     atención con el botón de compra). */
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: radial-gradient(
+          rgba(74, 44, 64, 0.05) 1.5px,
+          transparent 1.5px
+        );
+        background-size: 24px 24px;
+        pointer-events: none;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body class="bg-surface font-body-md text-on-surface">
+    <header
+      class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_12px_rgba(158,63,66,0.14)]"
+    >
+      <div
+        class="h-16 px-4 flex items-center justify-between mx-auto max-w-container-narrow"
+      >
+        <span class="font-headline-md text-headline-md text-plum-text"
+          >Crochet Premium</span
+        >
+        <a
+          href="https://go.hotmart.com/X106021764C?ap=4e75"
+          class="bg-buy-cta text-on-primary font-label-lg text-label-lg px-4 py-2 rounded-full border-b-[4px] border-buy-cta-border active:translate-y-[2px] active:border-b-[2px] transition-all"
+          >Empezar</a
+        >
+      </div>
+    </header>
+
+    <main
+      class="flex flex-col relative z-10 w-full mx-auto max-w-container-narrow pt-16 min-h-screen"
+    >
+      <div class="flex flex-col w-full gap-section-v pb-32">
+        <!-- HERO -->
+        <section
+          class="flex flex-col gap-block-gap items-center text-center px-4"
+        >
+          <h1
+            class="font-headline-impact text-[44px] leading-[1.02] font-black tracking-tight text-plum-text"
+          >
+            Lo gratis te está saliendo caro.
+            <span
+              class="block bg-gradient-to-br from-buy-cta via-coral-cta to-primary bg-clip-text text-transparent drop-shadow-[0_3px_14px_rgba(158,63,66,0.28)]"
+              >Y no es por el hilo.</span
+            >
+          </h1>
+          <p class="font-body-lg text-body-lg text-plum-text max-w-[90%]">
+            Mira, aprendiste puntos sueltos, no el orden que los conecta. Por
+            eso pasas horas con el gancho en la mano y el hilo enredado entre
+            los dedos, y avanzas poco. Y no es que te falte don.
+          </p>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            <span class="bg-lemon-highlight px-1 rounded"
+              >No hace falta experiencia previa</span
+            >. El curso arranca desde cero. Empieza literal por cómo sostener la
+            aguja.
+          </p>
+
+          <div
+            class="w-full aspect-video bg-inverse-surface rounded-xl overflow-hidden shadow-[0_10px_28px_-6px_rgba(158,63,66,0.32)] relative mt-2"
+          >
+            <iframe
+              class="absolute inset-0 w-full h-full"
+              src="https://player.vimeo.com/video/545949656?color&amp;autopause=0&amp;loop=0&amp;muted=0&amp;title=1&amp;portrait=1&amp;byline=1"
+              title="Ana María presentando Crochet Premium"
+              allow="clipboard-write; autoplay; fullscreen; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- CONTINUIDAD (Conversion Optimization, Cap. 4): los visitantes juzgan
+       si el anuncio y la landing son coherentes en menos de 1 segundo.
+       Si cambiás el gancho del video/reel que trae el tráfico, este
+       titular de arriba tiene que seguir siendo la misma idea (o una
+       continuación directa) de ese gancho — si no coinciden, se pierde la
+       visitante en el primer segundo, sin importar qué tan bueno sea el
+       resto del copy. -->
+          <a
+            href="https://go.hotmart.com/X106021764C?ap=4e75"
+            class="w-full bg-buy-cta text-on-primary py-6 px-6 rounded-full border-b-[8px] border-buy-cta-border active:border-b-[3px] active:translate-y-[5px] transition-all shadow-[0_18px_40px_-8px_rgba(232,84,63,0.55)] mt-4 text-center block"
+          >
+            <span class="block font-label-lg text-[21px] leading-tight"
+              >» SÍ, QUIERO CREAR MI MARCA DE CROCHET «</span
+            >
+            <span
+              class="block font-body-md text-[14px] font-normal opacity-85 mt-1 normal-case tracking-normal"
+              >Empieza hoy mismo desde cero</span
+            >
+          </a>
+        </section>
+
+        <!-- DECLARACIÓN IMPACTANTE -->
+        <section class="px-4">
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-gutter relative overflow-hidden flex flex-col gap-base"
+          >
+            <div
+              class="absolute left-0 top-0 bottom-0 w-2 bg-lemon-highlight"
+            ></div>
+            <p class="font-body-md text-body-md text-on-surface ml-2">
+              ¿Sabías esto? En un solo video de YouTube para principiantes de
+              crochet conté
+              <strong class="text-coral-cta font-headline-md text-[18px]"
+                >más de 100 comentarios</strong
+              >
+              de mujeres escribiendo la misma frase cada una a su manera:
+              <em class="text-secondary font-headline-md text-[18px]"
+                >"a mí no me sale."</em
+              >
+              Cien mujeres. Un solo video. Apostaría a que tú también la
+              pensaste alguna vez. El gancho a mitad de vuelta. La misma fila
+              torcida por tercera vez. No es que te falte el pulso. Es que nadie
+              te enseñó en el orden correcto. Y hay una razón bien concreta.
+            </p>
+          </div>
+        </section>
+
+        <!-- PROBLEMA -->
+        <section class="px-4">
+          <div
+            class="bg-surface-container-lowest border-[3px] border-dashed border-coral-cta rounded-xl p-gutter shadow-[0_10px_28px_-6px_rgba(158,63,66,0.22)] flex flex-col gap-block-gap"
+          >
+            <h2
+              class="font-headline-xl-mobile text-[26px] font-bold tracking-tight text-coral-cta text-center underline decoration-2 underline-offset-4"
+            >
+              Aquí está el problema, así de simple
+            </h2>
+            <div class="border-t border-outline-variant"></div>
+            <p class="font-body-md text-body-md text-on-surface">
+              Te cuento cómo empezó, porque seguro te suena. Aprendiste con lo
+              que encontraste <strong>gratis y suelto</strong> en internet. Un
+              video de gorros acá. Uno de bufandas allá. Nadie te avisó si tu
+              punto estaba bien o mal. Te dabas cuenta recién con
+              <u>diez filas torcidas</u> y el hilo enredado entre los dedos. Y
+              ya estás harta de eso.
+            </p>
+            <p class="font-body-md text-body-md text-on-surface">
+              ¿Y sabes en qué termina eso? En la bolsa con proyectos a medias en
+              el fondo del armario. En el gancho frío sobre la mesa. Ves a otra
+              mujer <strong>vender lo que teje</strong>, y algo se te aprieta en
+              el pecho. ¿Por qué ella sí y tú todavía no?
+            </p>
+          </div>
+        </section>
+
+        <!-- CASO EN CONTRA + RAZÓN MECÁNICA -->
+        <section class="px-4">
+          <div
+            class="bg-surface-container-lowest border-[3px] border-dashed border-primary rounded-xl p-gutter shadow-[0_10px_28px_-6px_rgba(79,28,48,0.22)] flex flex-col gap-block-gap"
+          >
+            <h2
+              class="font-headline-xl-mobile text-[26px] font-bold tracking-tight text-primary text-center underline decoration-2 underline-offset-4"
+            >
+              Antes de que pienses "esto lo consigo gratis"
+            </h2>
+            <div class="border-t border-outline-variant"></div>
+            <p class="font-body-md text-body-md text-on-surface">
+              Ya lo probaste. Por eso sigues aquí. ¿Pagaste alguna vez por algo
+              "barato" que resultó ser lo mismo que lo gratis?
+              <strong>El problema no fuiste tú</strong>. Fue que compraste
+              videos sueltos disfrazados de curso, no un programa real.
+            </p>
+            <p class="font-body-md text-body-md text-on-surface">
+              Y escúchame esto, porque es mecánica simple: no controlas la
+              tensión del hilo si no dominaste el punto bajo. No armas un tejido
+              circular sin el anillo mágico. No lees un patrón si no sabes las
+              abreviaturas.
+              <strong>Cada técnica sostiene a la siguiente</strong>. Por eso el
+              orden es <u>el 80% del resultado</u>.
+            </p>
+          </div>
+        </section>
+
+        <!-- SOLUCIÓN + VIDEO -->
+        <section class="flex flex-col gap-block-gap px-4 text-center">
+          <h2
+            class="font-headline-xl-mobile text-[32px] leading-[1.15] font-bold tracking-tight bg-gradient-to-br from-buy-cta via-coral-cta to-primary bg-clip-text text-transparent"
+          >
+            Pero resulta que sí hay una salida
+          </h2>
+          <p class="font-body-md text-body-md text-plum-text">
+            Imagina tener en las manos una prenda terminada, de verdad, y que
+            alguien te la compre. Confía: no es una fantasía, es lo que ya les
+            pasó a alumnas reales de este curso.
+          </p>
+          <p class="font-body-md text-body-md text-plum-text">
+            Se llama <strong class="text-coral-cta">Crochet Premium</strong>. Te
+            lo enseña Ana María: crochetera profesional hace más de 10 años. No
+            alguien que aprendió la semana pasada para grabar un curso. En sus
+            propias palabras:
+            <em
+              >"te voy a enseñar todos mis secretos que utilizo a la hora de
+              realizar hermosas prendas de manera simplificada y en muy poco
+              tiempo."</em
+            >
+          </p>
+          <p class="font-body-md text-body-md text-plum-text">
+            Y te lo digo derecho, sin venderte humo: esto no es magia. Vas a
+            tejer feo las primeras veces. Vas a maldecir el hilo más de una vez.
+            Así empezó cualquiera. Así empezó ella.
+          </p>
+
+          <img
+            class="w-full h-auto object-cover rounded-xl shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] mt-12"
+            src="src/mockups%20unidos.webp"
+            alt="Curso de Crochet Premium: Academy Class, plataforma oficial en Hotmart"
+          />
+
+        </section>
+
+        <!-- 3 PASOS -->
+        <section class="px-4 grid grid-cols-1 sm:grid-cols-3 gap-block-gap">
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex flex-col items-center text-center gap-2"
+          >
+            <span class="font-headline-xl text-headline-xl text-secondary"
+              >1</span
+            >
+            <h3 class="font-headline-md text-headline-md text-on-surface">
+              Aprendes
+            </h3>
+            <p class="font-body-md text-body-md text-plum-text">
+              Desde sostener la aguja hasta las técnicas profesionales, en el
+              orden correcto.
+            </p>
+          </div>
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex flex-col items-center text-center gap-2"
+          >
+            <span class="font-headline-xl text-headline-xl text-secondary"
+              >2</span
+            >
+            <h3 class="font-headline-md text-headline-md text-on-surface">
+              Creas
+            </h3>
+            <p class="font-body-md text-body-md text-plum-text">
+              Tus propios diseños, con tu propia marca y tu propio sello.
+            </p>
+          </div>
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex flex-col items-center text-center gap-2"
+          >
+            <span class="font-headline-xl text-headline-xl text-secondary"
+              >3</span
+            >
+            <h3 class="font-headline-md text-headline-md text-on-surface">
+              Vendes
+            </h3>
+            <p class="font-body-md text-body-md text-plum-text">
+              Con las técnicas de redes sociales que trae el curso, para empezar
+              a ganar dinero con lo que haces.
+            </p>
+          </div>
+        </section>
+
+        <!-- BULLETS -->
+        <section class="px-4 flex flex-col gap-block-gap">
+          <h2
+            class="font-headline-xl-mobile text-[32px] leading-[1.15] font-bold tracking-tight bg-gradient-to-br from-buy-cta via-coral-cta to-primary bg-clip-text text-transparent text-center mb-2"
+          >
+            Lo que vas a poder hacer
+          </h2>
+          <p class="font-body-md text-body-md text-plum-text text-center -mt-2">
+            Esto no es "aprendé crochet" genérico. Es esto, exactamente:
+          </p>
+
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex items-start gap-4"
+          >
+            <div
+              class="w-8 h-8 rounded-full bg-lemon-highlight flex items-center justify-center shrink-0 mt-1"
+            >
+              <span
+                class="material-symbols-outlined text-on-surface text-[18px]"
+                >check</span
+              >
+            </div>
+            <p class="font-body-md text-body-md text-on-surface">
+              Cómo armar el
+              <strong class="text-coral-cta">anillo mágico</strong> que separa
+              una prenda amateur de una que parece comprada en tienda.
+            </p>
+          </div>
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex items-start gap-4"
+          >
+            <div
+              class="w-8 h-8 rounded-full bg-lemon-highlight flex items-center justify-center shrink-0 mt-1"
+            >
+              <span
+                class="material-symbols-outlined text-on-surface text-[18px]"
+                >check</span
+              >
+            </div>
+            <p class="font-body-md text-body-md text-on-surface">
+              La diferencia real entre
+              <strong class="text-coral-cta"
+                >tejido plano y tejido circular tubular</strong
+              >. Confundir los dos es la razón por la que la mitad de tus
+              prendas no cierran bien.
+            </p>
+          </div>
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex items-start gap-4"
+          >
+            <div
+              class="w-8 h-8 rounded-full bg-lemon-highlight flex items-center justify-center shrink-0 mt-1"
+            >
+              <span
+                class="material-symbols-outlined text-on-surface text-[18px]"
+                >check</span
+              >
+            </div>
+            <p class="font-body-md text-body-md text-on-surface">
+              Cómo
+              <strong class="text-coral-cta"
+                >leer un patrón y un diagrama</strong
+              >
+              sin tener que adivinar ni frenar cada dos minutos a buscar un
+              tutorial distinto.
+            </p>
+          </div>
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex items-start gap-4"
+          >
+            <div
+              class="w-8 h-8 rounded-full bg-lemon-highlight flex items-center justify-center shrink-0 mt-1"
+            >
+              <span
+                class="material-symbols-outlined text-on-surface text-[18px]"
+                >check</span
+              >
+            </div>
+            <p class="font-body-md text-body-md text-on-surface">
+              El punto exacto donde la mayoría abandona un proyecto:
+              <strong class="text-coral-cta">aumentos y disminuciones</strong>.
+              Y cómo resolverlo antes de que te pase a ti.
+            </p>
+          </div>
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex items-start gap-4"
+          >
+            <div
+              class="w-8 h-8 rounded-full bg-lemon-highlight flex items-center justify-center shrink-0 mt-1"
+            >
+              <span
+                class="material-symbols-outlined text-on-surface text-[18px]"
+                >check</span
+              >
+            </div>
+            <p class="font-body-md text-body-md text-on-surface">
+              Cómo armar tu propio
+              <strong class="text-coral-cta"
+                >muestrario de puntos básicos</strong
+              >
+              antes de arriesgar tu primer proyecto real, para no gastar hilo en
+              algo que no vas a terminar.
+            </p>
+          </div>
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex items-start gap-4"
+          >
+            <div
+              class="w-8 h-8 rounded-full bg-lemon-highlight flex items-center justify-center shrink-0 mt-1"
+            >
+              <span
+                class="material-symbols-outlined text-on-surface text-[18px]"
+                >check</span
+              >
+            </div>
+            <p class="font-body-md text-body-md text-on-surface">
+              El módulo que casi ningún tutorial gratis tiene: cómo ponerle
+              <strong class="text-coral-cta"
+                >tu propio nombre y tu propio sello</strong
+              >
+              a lo que haces.
+            </p>
+          </div>
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex items-start gap-4"
+          >
+            <div
+              class="w-8 h-8 rounded-full bg-lemon-highlight flex items-center justify-center shrink-0 mt-1"
+            >
+              <span
+                class="material-symbols-outlined text-on-surface text-[18px]"
+                >check</span
+              >
+            </div>
+            <p class="font-body-md text-body-md text-on-surface">
+              Cómo mostrar y
+              <strong class="text-coral-cta"
+                >vender lo que tejes en redes sociales</strong
+              >
+              sin sonar a vendedora desesperada (Bono #2).
+            </p>
+          </div>
+        </section>
+
+        <!-- CREDIBILIDAD -->
+        <section class="px-4">
+          <h2
+            class="font-headline-xl-mobile text-[32px] leading-[1.15] font-bold tracking-tight bg-gradient-to-br from-buy-cta via-coral-cta to-primary bg-clip-text text-transparent text-center mb-2"
+          >
+            Quién te lo enseña
+          </h2>
+          <p class="font-body-md text-body-md text-plum-text text-center mb-2">
+            ¿Quién te dice todo esto? No una empresa. Una persona.
+          </p>
+          <div
+            class="bg-lemon-highlight rounded-xl p-gutter shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] flex flex-col items-center text-center gap-block-gap"
+          >
+            <img
+              class="w-28 h-28 rounded-full object-cover shadow-[0_10px_28px_-6px_rgba(158,63,66,0.32)] border-4 border-surface-bright"
+              src="src/foto-ana-maria.png"
+              alt="Ana María, instructora de Crochet Premium"
+            />
+            <blockquote
+              class="font-body-lg text-body-lg text-on-surface italic"
+            >
+              "Hola, mi nombre es Ana María y soy crochetera profesional hace
+              más de 10 años. En este curso te voy a enseñar todos mis secretos
+              que utilizo a la hora de realizar hermosas prendas de manera
+              simplificada y en muy poco tiempo."
+            </blockquote>
+            <span
+              class="font-label-lg text-label-lg text-coral-cta uppercase tracking-wider"
+              >Ana María, instructora de Crochet Premium</span
+            >
+          </div>
+        </section>
+
+        <!-- PRUEBA / TESTIMONIOS -->
+        <section class="px-4 flex flex-col gap-block-gap">
+          <div
+            class="bg-lemon-highlight rounded-xl p-gutter shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)]"
+          >
+            <p class="font-body-md text-body-md text-on-surface">
+              De un solo video de crochet para principiantes conté más de
+              <strong>150 personas</strong> diciendo que recién empiezan. Y más
+              de <strong>100</strong> describiendo que algo "no les sale" o "no
+              entienden". No eres la excepción. Eres la mayoría.
+            </p>
+          </div>
+
+          <h2
+            class="font-headline-xl-mobile text-[32px] leading-[1.15] font-bold tracking-tight bg-gradient-to-br from-buy-cta via-coral-cta to-primary bg-clip-text text-transparent text-center mt-2 mb-2"
+          >
+            Lo que dicen las alumnas reales
+          </h2>
+          <div class="grid grid-cols-2 gap-4">
+            <div
+              class="bg-surface-container-lowest rounded-xl shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] overflow-hidden flex flex-col"
+            >
+              <img
+                class="w-full h-auto"
+                src="src/testimonio%205.webp"
+                alt="Testimonio de Milka Pereyra, Montevideo, Uruguay"
+              />
+              <div class="p-3 bg-surface-container">
+                <p class="font-label-md text-label-md text-plum-text">
+                  Milka Pereyra · Montevideo
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-surface-container-lowest rounded-xl shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] overflow-hidden flex flex-col"
+            >
+              <img
+                class="w-full h-auto"
+                src="src/testimonio%204.webp"
+                alt="Testimonio de Vanely Rodriguez: comenzó de cero"
+              />
+              <div class="p-3 bg-surface-container">
+                <p class="font-label-md text-label-md text-plum-text">
+                  Vanely Rodriguez
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-surface-container-lowest rounded-xl shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] overflow-hidden flex flex-col"
+            >
+              <img
+                class="w-full h-auto"
+                src="src/testimonio%203.webp"
+                alt="Avances de Maria Esther Fernandez, granny squares"
+              />
+              <div class="p-3 bg-surface-container">
+                <p class="font-label-md text-label-md text-plum-text">
+                  Maria Esther Fernandez
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-surface-container-lowest rounded-xl shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] overflow-hidden flex flex-col"
+            >
+              <img
+                class="w-full h-auto"
+                src="src/testimonio%202.webp"
+                alt="Bufanda de Margarita Alcaraz terminando el reto"
+              />
+              <div class="p-3 bg-surface-container">
+                <p class="font-label-md text-label-md text-plum-text">
+                  Margarita Alcaraz
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-span-2 bg-surface-container-lowest rounded-xl shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] overflow-hidden flex flex-col"
+            >
+              <img
+                class="w-full h-auto"
+                src="src/testimonio%201.webp"
+                alt="Bolso de flores de Maria Esther Fernandez"
+              />
+              <div class="p-3 bg-surface-container">
+                <p class="font-label-md text-label-md text-plum-text">
+                  Maria Esther Fernandez
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CURRÍCULA -->
+        <section class="px-4 flex flex-col gap-block-gap">
+          <h2
+            class="font-headline-xl-mobile text-[32px] leading-[1.15] font-bold tracking-tight bg-gradient-to-br from-buy-cta via-coral-cta to-primary bg-clip-text text-transparent text-center mb-2"
+          >
+            El programa completo
+          </h2>
+
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex gap-block-gap"
+          >
+            <span
+              class="font-headline-lg text-headline-lg text-secondary shrink-0"
+              >01</span
+            >
+            <div class="flex flex-col gap-1 mt-1">
+              <h3 class="font-headline-md text-[20px] text-on-surface">
+                Conociendo los materiales
+              </h3>
+              <p class="font-body-md text-[15px] text-plum-text">
+                Agujas e hilado, herramientas de trabajo, nudo corredizo y
+                cadeneta.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex gap-block-gap"
+          >
+            <span
+              class="font-headline-lg text-headline-lg text-secondary shrink-0"
+              >02</span
+            >
+            <div class="flex flex-col gap-1 mt-1">
+              <h3 class="font-headline-md text-[20px] text-on-surface">
+                Primeras prácticas
+              </h3>
+              <p class="font-body-md text-[15px] text-plum-text">
+                Punto bajo, medio punto alto, punto alto y punto alto doble,
+                aumentos y disminuciones.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex gap-block-gap"
+          >
+            <span
+              class="font-headline-lg text-headline-lg text-secondary shrink-0"
+              >03</span
+            >
+            <div class="flex flex-col gap-1 mt-1">
+              <h3 class="font-headline-md text-[20px] text-on-surface">
+                Técnicas para dar forma a los tejidos
+              </h3>
+              <p class="font-body-md text-[15px] text-plum-text">
+                Anillo mágico, lectura de patrones y diagramas, tejido circular
+                tubular y cambio de color.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex gap-block-gap"
+          >
+            <span
+              class="font-headline-lg text-headline-lg text-secondary shrink-0"
+              >04</span
+            >
+            <div class="flex flex-col gap-1 mt-1">
+              <h3 class="font-headline-md text-[20px] text-on-surface">
+                Proyectos
+              </h3>
+              <p class="font-body-md text-[15px] text-plum-text">
+                Toma de medidas, armado de patrones y estructuras de diseño,
+                creación de tu propia marca personal.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap flex gap-block-gap"
+          >
+            <span
+              class="font-headline-lg text-headline-lg text-secondary shrink-0"
+              >05</span
+            >
+            <div class="flex flex-col gap-1 mt-1">
+              <h3 class="font-headline-md text-[20px] text-on-surface">
+                Módulos extra
+              </h3>
+              <p class="font-body-md text-[15px] text-plum-text">
+                Puntos fantasía, granny square con flores 3D, tejidos realizados
+                con totora.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- OFERTA -->
+        <section class="px-4">
+          <div
+            class="bg-surface-container-lowest shadow-[0_10px_28px_-6px_rgba(158,63,66,0.32)] rounded-xl p-gutter flex flex-col items-center text-center gap-block-gap border-t-4 border-lemon-highlight"
+          >
+            <h2
+              class="font-headline-xl-mobile text-[32px] leading-[1.15] font-bold tracking-tight bg-gradient-to-br from-buy-cta via-coral-cta to-primary bg-clip-text text-transparent"
+            >
+              Todo lo que te llevas
+            </h2>
+
+            <ul class="text-left w-full flex flex-col gap-2">
+              <li
+                class="flex items-start gap-2 font-body-md text-body-md text-on-surface"
+              >
+                <span
+                  class="material-symbols-outlined text-good-green text-[20px]"
+                  >check_circle</span
+                >Acceso de por vida al curso completo en video HD y todas sus
+                actualizaciones futuras
+              </li>
+              <li
+                class="flex items-start gap-2 font-body-md text-body-md text-on-surface"
+              >
+                <span
+                  class="material-symbols-outlined text-good-green text-[20px]"
+                  >check_circle</span
+                >Acceso a una comunidad exclusiva de crocheteras que están en lo
+                mismo que tú
+              </li>
+              <li
+                class="flex items-start gap-2 font-body-md text-body-md text-on-surface"
+              >
+                <span
+                  class="material-symbols-outlined text-good-green text-[20px]"
+                  >check_circle</span
+                >Acompañamiento del tutor y sistema de preguntas y respuestas
+                tipo foro
+              </li>
+            </ul>
+
+            <div class="flex flex-col gap-1 my-2">
+              <span
+                class="font-body-lg text-body-lg text-plum-text line-through decoration-outline-variant"
+                >Valor real: $100</span
+              >
+              <span
+                class="font-headline-xl text-[56px] text-coral-cta leading-none"
+                >$39,99</span
+              >
+            </div>
+
+            <p class="font-body-md text-body-md text-plum-text">
+              <strong
+                >Por menos de lo que gastas en dos salidas al
+                supermercado</strong
+              >. No por lujo: por dejar de gastar hilo y tiempo en intentos que
+              no llegan a nada.
+            </p>
+          </div>
+        </section>
+
+        <!-- BONOS -->
+        <section
+          class="px-4 flex flex-col gap-block-gap bg-surface-container py-section-v rounded-[32px] mx-2"
+        >
+          <h2
+            class="font-headline-xl-mobile text-[32px] leading-[1.15] font-bold tracking-tight bg-gradient-to-br from-buy-cta via-coral-cta to-primary bg-clip-text text-transparent text-center mb-2"
+          >
+            Y eso no es todo: 5 bonos sin costo extra
+          </h2>
+
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl overflow-hidden relative flex gap-block-gap items-center p-block-gap mx-4"
+          >
+            <img
+              class="w-16 h-16 rounded-lg object-cover shrink-0"
+              src="src/bono%201.webp"
+              alt="Super kit para emprendedoras"
+            />
+            <div class="flex-1">
+              <div
+                class="inline-block bg-lemon-highlight text-on-surface font-label-md text-label-md px-3 py-1 rounded-full mb-1"
+              >
+                Bono 1 · Valor $47
+              </div>
+              <h3 class="font-headline-md text-[18px] text-on-surface">
+                Super kit para emprendedoras
+              </h3>
+              <p class="font-body-md text-[14px] text-plum-text">
+                Patrones, planificador y agenda crochetera, todo descargable.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl overflow-hidden relative flex gap-block-gap items-center p-block-gap mx-4"
+          >
+            <img
+              class="w-16 h-16 rounded-lg object-cover shrink-0"
+              src="src/bono%202.webp"
+              alt="Crece y vende tus productos en redes sociales"
+            />
+            <div class="flex-1">
+              <div
+                class="inline-block bg-lemon-highlight text-on-surface font-label-md text-label-md px-3 py-1 rounded-full mb-1"
+              >
+                Bono 2 · Valor $67
+              </div>
+              <h3 class="font-headline-md text-[18px] text-on-surface">
+                Crece en las redes sociales
+              </h3>
+              <p class="font-body-md text-[14px] text-plum-text">
+                Powerclass para crear tu marca personal y vender tus creaciones
+                paso a paso.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl overflow-hidden relative flex gap-block-gap items-center p-block-gap mx-4"
+          >
+            <img
+              class="w-16 h-16 rounded-lg object-cover shrink-0"
+              src="src/bono%203.webp"
+              alt="Navidad para todos"
+            />
+            <div class="flex-1">
+              <div
+                class="inline-block bg-lemon-highlight text-on-surface font-label-md text-label-md px-3 py-1 rounded-full mb-1"
+              >
+                Bono 3 · Valor $37
+              </div>
+              <h3 class="font-headline-md text-[18px] text-on-surface">
+                Navidad para todos
+              </h3>
+              <p class="font-body-md text-[14px] text-plum-text">
+                Clases adicionales de accesorios navideños + 8 patrones extra.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl overflow-hidden relative flex gap-block-gap items-center p-block-gap mx-4"
+          >
+            <img
+              class="w-16 h-16 rounded-lg object-cover shrink-0"
+              src="src/bono%204.webp"
+              alt="Guía de compras: lista de proveedores"
+            />
+            <div class="flex-1">
+              <div
+                class="inline-block bg-lemon-highlight text-on-surface font-label-md text-label-md px-3 py-1 rounded-full mb-1"
+              >
+                Bono 4 · Valor $27
+              </div>
+              <h3 class="font-headline-md text-[18px] text-on-surface">
+                Lista de proveedores
+              </h3>
+              <p class="font-body-md text-[14px] text-plum-text">
+                Para conseguir materiales fácil, sin importar tu país. Nadie te
+                deja sola buscando dónde comprar.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl overflow-hidden relative flex gap-block-gap items-center p-block-gap mx-4"
+          >
+            <img
+              class="w-16 h-16 rounded-lg object-cover shrink-0"
+              src="src/certificado.webp"
+              alt="Certificado de participación Crochet Premium"
+            />
+            <div class="flex-1">
+              <div
+                class="inline-block bg-lemon-highlight text-on-surface font-label-md text-label-md px-3 py-1 rounded-full mb-1"
+              >
+                Bono 5 · Valor $22
+              </div>
+              <h3 class="font-headline-md text-[18px] text-on-surface">
+                Certificado
+              </h3>
+              <p class="font-body-md text-[14px] text-plum-text">
+                Certificado de participación al terminar el programa.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CIERRE DE LA OFERTA -->
+        <section class="px-4">
+          <div
+            class="bg-surface-container-lowest shadow-[0_10px_28px_-6px_rgba(158,63,66,0.32)] rounded-xl p-gutter flex flex-col items-center text-center gap-block-gap"
+          >
+            <p class="font-body-md text-body-md text-on-surface">
+              Sumale los 5 bonos de arriba ($47 + $67 + $37 + $27 + $22):
+              <strong>$200 en valor real</strong>, incluidos en tu pago único de
+              $39,99. No los pagas aparte.
+            </p>
+
+            <div
+              class="bg-surface-container-high w-full rounded-xl p-block-gap text-left flex flex-col gap-2"
+            >
+              <p class="font-body-md text-[14px] text-on-surface">
+                Más de 100 mujeres escribieron "a mí no me sale" en un solo
+                video de YouTube. No eres la única con este problema.
+              </p>
+              <p class="font-body-md text-[14px] text-on-surface">
+                Maria Esther Fernandez, alumna real, ya tiene sus granny squares
+                armados.
+              </p>
+              <p class="font-body-md text-[14px] text-on-surface">
+                Mira el video de arriba: Ana María te muestra la técnica
+                completa, no un resumen.
+              </p>
+            </div>
+
+            <p class="font-body-md text-[14px] text-plum-text italic">
+              Cada tutorial gratis que sigas viendo es tiempo que no te acerca a
+              vender nada.
+            </p>
+
+            <div
+              class="bg-surface-container-high w-full rounded-xl p-block-gap flex items-center gap-4 text-left shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)]"
+            >
+              <span class="material-symbols-outlined text-coral-cta text-[32px]"
+                >shield_lock</span
+              >
+              <p
+                class="font-caption text-[14px] text-on-surface-variant leading-tight"
+              >
+                <strong
+                  >Garantía de 7 días, sin líos y sin preguntas
+                  incómodas.</strong
+                >
+                Si sientes que no era para ti, te devuelven el 100% de tu
+                dinero. <u>El 100%, no una parte</u>.
+              </p>
+            </div>
+
+            <a
+              href="https://go.hotmart.com/X106021764C?ap=4e75"
+              class="w-full bg-buy-cta text-on-primary py-6 px-6 rounded-full border-b-[8px] border-buy-cta-border active:border-b-[3px] active:translate-y-[5px] transition-all shadow-[0_18px_40px_-8px_rgba(232,84,63,0.55)] mt-2 text-center block"
+            >
+              <span class="block font-label-lg text-[21px] leading-tight"
+                >» SÍ, QUIERO MI ACCESO «</span
+              >
+              <span
+                class="block font-body-md text-[14px] font-normal opacity-85 mt-1 normal-case tracking-normal"
+                >Crochet Premium completo por $39,99</span
+              >
+            </a>
+            <a
+              href="https://go.hotmart.com/X106021764C?ap=4e75"
+              class="font-label-md text-label-md text-coral-cta underline"
+              >Hace clic aquí y arranca hoy →</a
+            >
+          </div>
+        </section>
+
+        <!-- OBJECIONES -->
+        <section class="px-4 flex flex-col gap-2">
+          <h2
+            class="font-headline-xl-mobile text-[32px] leading-[1.15] font-bold tracking-tight bg-gradient-to-br from-buy-cta via-coral-cta to-primary bg-clip-text text-transparent text-center mb-2"
+          >
+            Lo que seguro estás pensando
+          </h2>
+          <p
+            class="font-body-md text-body-md text-plum-text text-center mb-2 italic"
+          >
+            La mayoría de las que lean esto no va a hacer clic. Lo sé. Y me
+            juego algo: sé exactamente por qué. Así que antes de que cierres
+            esta página, contesto lo que ya estás pensando:
+          </p>
+
+          <details
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap group"
+          >
+            <summary
+              class="font-headline-md text-[17px] text-on-surface flex justify-between items-center gap-3 cursor-pointer list-none"
+            >
+              <span>¿Para qué pago si hay tutoriales gratis en YouTube?</span>
+              <span
+                class="material-symbols-outlined text-secondary group-open:rotate-45 transition-transform shrink-0"
+                >add</span
+              >
+            </summary>
+            <p class="font-body-md text-body-md text-plum-text mt-3">
+              Porque ya los viste y sigues aquí leyendo. Lo gratis no tiene
+              orden, y nunca sabes si tu técnica es correcta. Este curso sí, de
+              punta a punta. Y si aun así no es para ti, tienes la garantía de 7
+              días.
+            </p>
+          </details>
+
+          <details
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap group"
+          >
+            <summary
+              class="font-headline-md text-[17px] text-on-surface flex justify-between items-center gap-3 cursor-pointer list-none"
+            >
+              <span
+                >Ya pagué un curso antes y terminó siendo lo mismo que lo
+                gratis.</span
+              >
+              <span
+                class="material-symbols-outlined text-secondary group-open:rotate-45 transition-transform shrink-0"
+                >add</span
+              >
+            </summary>
+            <p class="font-body-md text-body-md text-plum-text mt-3">
+              Le pasó a mucha gente. La diferencia acá es la estructura completa
+              (materiales → puntos → forma → marca → venta) y el acompañamiento
+              del tutor, no un montón de videos sueltos con nombre de curso. Y
+              esta vez, si no te sirve, te devuelven la plata.
+            </p>
+          </details>
+
+          <details
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap group"
+          >
+            <summary
+              class="font-headline-md text-[17px] text-on-surface flex justify-between items-center gap-3 cursor-pointer list-none"
+            >
+              <span>No tengo plata para darme ese lujo ahora.</span>
+              <span
+                class="material-symbols-outlined text-secondary group-open:rotate-45 transition-transform shrink-0"
+                >add</span
+              >
+            </summary>
+            <p class="font-body-md text-body-md text-plum-text mt-3">
+              Por eso el valor real del programa ($100) baja a un único pago de
+              $39,99. Y por eso tienes 7 días de garantía completa. Si no era
+              para ti te devuelven todo.
+            </p>
+          </details>
+
+          <details
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap group"
+          >
+            <summary
+              class="font-headline-md text-[17px] text-on-surface flex justify-between items-center gap-3 cursor-pointer list-none"
+            >
+              <span>Nunca tejí nada en mi vida, no sé si voy a poder.</span>
+              <span
+                class="material-symbols-outlined text-secondary group-open:rotate-45 transition-transform shrink-0"
+                >add</span
+              >
+            </summary>
+            <p class="font-body-md text-body-md text-plum-text mt-3">
+              El curso arranca literal desde cómo sostener la aguja y el hilo.
+              No es para quien ya sabe. Es para quien no sabe nada todavía. Y
+              tienes 7 días para comprobarlo sin perder nada.
+            </p>
+          </details>
+
+          <details
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap group"
+          >
+            <summary
+              class="font-headline-md text-[17px] text-on-surface flex justify-between items-center gap-3 cursor-pointer list-none"
+            >
+              <span>No tengo tarjeta para pagar por internet.</span>
+              <span
+                class="material-symbols-outlined text-secondary group-open:rotate-45 transition-transform shrink-0"
+                >add</span
+              >
+            </summary>
+            <p class="font-body-md text-body-md text-plum-text mt-3">
+              Hay opción de pago en efectivo según tu país (PagoEfectivo, OXXO,
+              Baloto, Sencillito). O le puedes pedir a alguien de confianza que
+              haga la compra por ti.
+            </p>
+          </details>
+
+          <details
+            class="bg-surface-container-lowest shadow-[0_4px_16px_-2px_rgba(158,63,66,0.22)] rounded-xl p-block-gap group"
+          >
+            <summary
+              class="font-headline-md text-[17px] text-on-surface flex justify-between items-center gap-3 cursor-pointer list-none"
+            >
+              <span>No voy a tener tiempo de seguirlo con horario fijo.</span>
+              <span
+                class="material-symbols-outlined text-secondary group-open:rotate-45 transition-transform shrink-0"
+                >add</span
+              >
+            </summary>
+            <p class="font-body-md text-body-md text-plum-text mt-3">
+              No hay horario. Los videos son tuyos para siempre y avanzas a tu
+              ritmo.
+            </p>
+          </details>
+        </section>
+      </div>
+
+      <!-- STICKY CTA MOBILE -->
+      <div
+        class="fixed bottom-0 left-0 right-0 bg-surface/90 backdrop-blur-xl p-4 pb-safe shadow-[0_-8px_24px_rgba(158,63,66,0.22)] z-40 md:hidden flex justify-center"
+      >
+        <div class="w-full max-w-container-narrow">
+          <a
+            href="https://go.hotmart.com/X106021764C?ap=4e75"
+            class="w-full block bg-buy-cta text-on-primary font-label-lg text-[18px] py-5 px-6 rounded-full border-b-[7px] border-buy-cta-border active:border-b-[3px] active:translate-y-[4px] transition-all shadow-[0_16px_36px_-8px_rgba(232,84,63,0.55)] text-center"
+          >
+            » SÍ, QUIERO EMPEZAR HOY «
+          </a>
+        </div>
+      </div>
+
+      <footer class="mt-auto py-section-v px-gutter bg-surface-container-low">
+        <div
+          class="flex flex-col gap-block-gap items-center text-center max-w-container-narrow mx-auto"
+        >
+          <h2
+            class="font-headline-xl-mobile text-[32px] leading-[1.15] font-bold tracking-tight bg-gradient-to-br from-buy-cta via-coral-cta to-primary bg-clip-text text-transparent"
+          >
+            Todavía no sabes tejer nada. Está bien.
+          </h2>
+          <p class="font-body-md text-body-md text-plum-text">
+            Ya te lo dije arriba y te lo repito acá porque importa: nadie
+            empieza sabiendo. Vas a apretar el hilo mal. Vas a deshacer más de
+            una fila. Y en algún momento vas a querer tirar todo a un lado. Esta
+            vez vas a saber si lo estás haciendo bien, paso a paso. Y vas a
+            terminar sabiendo qué hacer con lo que hagas.
+          </p>
+          <div
+            class="bg-surface-container-high rounded-xl p-block-gap text-left w-full"
+          >
+            <p class="font-body-md text-body-md text-on-surface">
+              <strong class="text-coral-cta">P.D.:</strong> Cada semana que
+              sigas con el mismo ovillo a medio tejer es una semana más lejos de
+              tu primera prenda terminada y de tu primera venta. Tienes 7 días
+              de garantía completa para probarlo sin riesgo. La única forma de
+              perder acá es no intentarlo.
+            </p>
+          </div>
+          <a
+            href="https://go.hotmart.com/X106021764C?ap=4e75"
+            class="w-full bg-buy-cta text-on-primary py-6 px-6 rounded-full border-b-[8px] border-buy-cta-border active:border-b-[3px] active:translate-y-[5px] transition-all shadow-[0_18px_40px_-8px_rgba(232,84,63,0.55)] text-center block"
+          >
+            <span class="block font-label-lg text-[21px] leading-tight"
+              >» SÍ, QUIERO EMPEZAR HOY «</span
+            >
+            <span
+              class="block font-body-md text-[14px] font-normal opacity-85 mt-1 normal-case tracking-normal"
+              >Tu primera prenda puede estar más cerca de lo que crees</span
+            >
+          </a>
+          <p class="font-caption text-caption text-on-surface-variant max-w-md">
+            Esta página es una recomendación independiente de afiliado. El curso
+            es vendido y entregado por Academyclass a través de Hotmart.
+            Cualquier duda de pago, acceso o garantía se resuelve directamente
+            con Hotmart/Academyclass.
+          </p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
