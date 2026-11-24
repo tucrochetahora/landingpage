@@ -111,12 +111,13 @@
     </a>
     <p class="listo" id="listo">Tu mensaje ya va escrito. Solo tocas enviar.</p>
 
-    <a class="enlace guia" id="guia" href="https://wa.me/573227932954?text=Hola%2C%20quiero%20la%20gu%C3%ADa%20gratis%20Teje%20parejo">
-      <span class="etiqueta">GRATIS</span>
+    <a class="enlace guia" id="guia" href="guia-teje-parejo.pdf" download="Guia-Teje-parejo-Tu-Crochet-Ahora.pdf" type="application/pdf">
+      <span class="etiqueta">GRATIS · PDF</span>
       <img src="guia.jpg" width="360" height="509" alt="Portada de la guía Teje parejo desde la primera vuelta" loading="lazy">
-      <span class="txt"><b>Guía: teje parejo desde la primera vuelta</b><small>Por qué tu tejido no te sale y cómo dejar de destejer. Pídemela y te la envío por WhatsApp.</small><span class="pastilla">Pedir mi guía</span></span>
-      <svg class="ir" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+      <span class="txt"><b>Guía: teje parejo desde la primera vuelta</b><small id="guiaSub">Por qué tu tejido no te sale y cómo dejar de destejer. Toca y se descarga al instante.</small><span class="pastilla" id="guiaTxt">Descargar mi guía</span></span>
+      <svg class="ir" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="M7 10l5 5 5-5"/><path d="M5 20h14"/></svg>
     </a>
+    <p class="listo oculto" id="descargada">¿Ya la tienes? Empieza por la página 3. Si te trabas, escríbeme por WhatsApp con el botón verde.</p>
 
   </div>
 </main>
@@ -125,9 +126,9 @@
   (function () {
     var tel = '573227932954';
     var mensajes = {
-      curso: 'Hola, vengo de TikTok. Cuéntame del video curso de crochet',
-      guia: 'Hola, quiero la guía gratis Teje parejo'
+      curso: 'Hola, vengo de TikTok. Cuéntame del video curso de crochet'
     };
+    var pdf = 'tucrochetahora.online/whatsapp/guia-teje-parejo.pdf';
     var ua = navigator.userAgent || '';
     var android = /android/i.test(ua);
     var ios = /iphone|ipad|ipod/i.test(ua);
@@ -150,23 +151,36 @@
     var abrir = document.getElementById('abrir');
     var guia = document.getElementById('guia');
     abrir.href = app(mensajes.curso);
-    guia.href = app(mensajes.guia);
+
+    // La guía se descarga directo del sitio. Dentro de TikTok la descarga
+    // no funciona, así que el PDF se abre en Chrome (Android) o Safari (iPhone).
+    guia.addEventListener('click', function () {
+      setTimeout(function () { document.getElementById('descargada').classList.remove('oculto'); }, 600);
+    });
 
     if (tiktok) {
       document.getElementById('tiktok').classList.remove('oculto');
       document.getElementById('flechaMenu').classList.remove('oculto');
       document.getElementById('listo').classList.add('oculto');
       abrir.href = salir('curso');
-      guia.href = salir('guia');
+      if (android) {
+        guia.removeAttribute('download');
+        guia.href = 'intent://' + pdf + '#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=' + encodeURIComponent('https://' + pdf) + ';end';
+      } else if (ios) {
+        guia.removeAttribute('download');
+        guia.href = 'x-safari-https://' + pdf;
+      }
       if (android || ios) {
         document.getElementById('abrirTxt').textContent = android ? 'Abrir en Chrome' : 'Abrir en Safari';
         document.getElementById('abrirSub').textContent = 'Y ahí se abre tu WhatsApp';
+        document.getElementById('guiaSub').textContent = 'Por qué tu tejido no te sale y cómo dejar de destejer. Se abre en ' + (android ? 'Chrome' : 'Safari') + ' y la guardas en tu celular.';
       }
     } else {
       var pedido = (location.search.match(/[?&]abrir=(\w+)/) || [])[1];
-      if (pedido) {
-        var txt = mensajes[pedido] || mensajes.curso;
-        setTimeout(function () { location.href = app(txt); }, 400);
+      if (pedido === 'guia') {
+        setTimeout(function () { location.href = 'guia-teje-parejo.pdf'; }, 400);
+      } else if (pedido) {
+        setTimeout(function () { location.href = app(mensajes.curso); }, 400);
       }
     }
 
